@@ -1,0 +1,17 @@
+{
+  "note": "Held-out synthetic notes, written after the rule reader was tuned and scored once. Author-written, not real speech.",
+  "items": [
+    {"t": "bhabhi ne aaj mango pickle ke 32 dabbe banaye. kairi das kilo li thi, tel dhai litre", "product": "Mango pickle", "made": [32, "jar"], "inputs": [["raw mango", 10, "kg"], ["mustard oil", 2.5, "l"]]},
+    {"t": "Lemon pickle - 24 bottles. Nimbu 7 kg, namak 1.2 kg, haldi 250 gm", "product": "Lemon pickle", "made": [24, "jar"], "inputs": [["lemon", 7, "kg"], ["salt", 1.2, "kg"], ["turmeric", 250, "g"]]},
+    {"t": "mango pickle 40 dabbe, mirchi wahi naye packet wali 1 kilo, kairi 12 kilo, sarson tel 3 litre", "product": "Mango pickle", "made": [40, "jar"], "inputs": [["chilli powder", 1, "kg"], ["raw mango", 12, "kg"], ["mustard oil", 3, "l"]]},
+    {"t": "aaj 2 kilo masala banaya, mirchi 1.5 kilo aur namak 500 gram", "product": null, "made": null, "inputs": [["chilli powder", 1.5, "kg"], ["salt", 500, "g"]]},
+    {"t": "Mango pickle 26 jar ready. aam 8 kilo, oil 2 litre, namak 800 gram", "product": "Mango pickle", "made": [26, "jar"], "inputs": [["raw mango", 8, "kg"], ["mustard oil?", 2, "l"], ["salt", 800, "g"]]},
+    {"t": "lemon pickle 12 dabbe, nimbu teen kilo", "product": "Lemon pickle", "made": [12, "jar"], "inputs": [["lemon", 3, "kg"]]},
+    {"t": "mango pickle banaya kal wala masala daal ke, 1 kilo masala, kairi 10 kilo, 33 dabbe", "product": "Mango pickle", "made": [33, "jar"], "inputs": [["masala?", 1, "kg"], ["raw mango", 10, "kg"]]},
+    {"t": "Mango pickle 38 dabbe. lal mirch 900 gram GM-118. kairi 11 kilo. namak 1 kilo", "product": "Mango pickle", "made": [38, "jar"], "inputs": [["chilli powder", 900, "g"], ["raw mango", 11, "kg"], ["salt", 1, "kg"]]},
+    {"t": "Sharma Kirana ko 15 dabbe mango pickle diye", "product": "Mango pickle", "made": null, "inputs": []},
+    {"t": "lemon pickle 16 bottle, nimbu 4 kilo, red powder 200 gram", "product": "Lemon pickle", "made": [16, "jar"], "inputs": [["lemon", 4, "kg"], ["chilli powder?", 200, "g"]]},
+    {"t": "mango pickle 44 dabbe kairi 13 kilo tel 3 litre namak 1.5 kilo mirchi 1 kilo", "product": "Mango pickle", "made": [44, "jar"], "inputs": [["raw mango", 13, "kg"], ["mustard oil", 3, "l"], ["salt", 1.5, "kg"], ["chilli powder", 1, "kg"]]},
+    {"t": "मैंगो पिकल 20 डब्बे, कैरी 6 किलो, नमक 500 ग्राम, लाल मिर्च 400 ग्राम", "product": "Mango pickle", "made": [20, "jar"], "inputs": [["raw mango", 6, "kg"], ["salt", 500, "g"], ["chilli powder", 400, "g"]]}
+  ]
+}

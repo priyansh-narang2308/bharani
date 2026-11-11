@@ -1,0 +1,19 @@
+{
+  "note": "Author-written synthetic notes, not real speech.",
+  "extractor": "rules",
+  "notes": 12,
+  "failures": 0,
+  "productAccuracy": 0.9166666666666666,
+  "madeQuantityAccuracy": 0.9166666666666666,
+  "inputRecall": 0.6785714285714286,
+  "inputPrecision": 0.7307692307692307,
+  "wrongIdentityAssertions": 1,
+  "vagueNamesKeptOpen": "3/3",
+  "ungroundedRemoved": 0,
+  "medianMs": 0.27325000000000443,
+  "tokens": {
+    "input": 0,
+    "output": 0
+  },
+  "costUsd": 0
+}
