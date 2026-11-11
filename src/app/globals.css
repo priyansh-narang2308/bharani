@@ -1,0 +1,84 @@
+/* Design tokens. The Figma variables use the same names. */
+:root {
+  --bg: #faf7f2;
+  --surface: #ffffff;
+  --surface-2: #f3eee6;
+  --ink: #1d1a16;
+  --muted: #6b6358;
+  --line: #e4ddd1;
+  --accent: #9a5b13;
+  --accent-ink: #ffffff;
+  --confirmed: #b42318;
+  --confirmed-bg: #fde8e6;
+  --conditional: #b54708;
+  --conditional-bg: #fef0db;
+  --undetermined: #4f46b8;
+  --undetermined-bg: #ebe9fb;
+  --nolink: #5f6672;
+  --nolink-bg: #eceef1;
+  --sim: #7a4dc4;
+  --radius: 10px;
+  --font: "Inter", "Noto Sans", "Noto Sans Devanagari", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15130f; --surface: #1e1b17; --surface-2: #27231e; --ink: #f2ede5; --muted: #a89f92; --line: #36312a;
+    --accent: #e0a24a; --accent-ink: #1d1a16;
+    --confirmed: #f97066; --confirmed-bg: #3d1714; --conditional: #fdb022; --conditional-bg: #3a2608;
+    --undetermined: #a5a0f5; --undetermined-bg: #24214a; --nolink: #a1a8b3; --nolink-bg: #2a2d33; --sim: #c3a6f2;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 var(--font); }
+button { font: inherit; cursor: pointer; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); padding: 7px 12px; }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+button:disabled { opacity: .5; cursor: default; }
+textarea, select, input { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+.shell { max-width: 1180px; margin: 0 auto; padding: 16px; }
+.top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+.brand { font-weight: 700; font-size: 20px; letter-spacing: -.01em; }
+.tag { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--surface-2); color: var(--muted); }
+.tag.sim { color: var(--sim); border: 1px dashed var(--sim); background: transparent; }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 16px; overflow-x: auto; }
+.tabs button { border: 0; border-bottom: 2px solid transparent; border-radius: 0; background: none; color: var(--muted); padding: 10px 12px; white-space: nowrap; }
+.tabs button.on { color: var(--ink); border-bottom-color: var(--accent); font-weight: 600; }
+.grid { display: grid; gap: 16px; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); }
+@media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; }
+.card h2 { font-size: 15px; margin: 0 0 10px; }
+.card h3 { font-size: 13px; margin: 12px 0 6px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+@media (max-width: 560px) { .tiles { grid-template-columns: repeat(2, 1fr); } }
+.tile { border-radius: 8px; padding: 10px; }
+.tile b { display: block; font-size: 24px; line-height: 1.1; }
+.tile span { font-size: 12px; }
+.s-confirmed { background: var(--confirmed-bg); color: var(--confirmed); }
+.s-conditional { background: var(--conditional-bg); color: var(--conditional); }
+.s-undetermined { background: var(--undetermined-bg); color: var(--undetermined); }
+.s-no_recorded_link { background: var(--nolink-bg); color: var(--nolink); }
+.chip { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 999px; }
+.coverage { border-left: 4px solid var(--confirmed); padding: 10px 12px; background: var(--surface-2); border-radius: 6px; margin: 12px 0; }
+.coverage.ok { border-left-color: var(--nolink); }
+.coverage ul { margin: 6px 0 0; padding-left: 18px; }
+.q { border: 1px solid var(--line); border-radius: 8px; padding: 10px; margin-bottom: 8px; }
+.q .meta { font-size: 12px; color: var(--muted); }
+.answers { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.answers small { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 7px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12px; color: var(--muted); font-weight: 600; }
+.wrap { overflow-x: auto; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+.muted { color: var(--muted); }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.notice { white-space: pre-wrap; background: var(--surface-2); border-radius: 8px; padding: 10px; font-size: 13px; margin: 6px 0; }
+.phone { max-width: 380px; margin: 0 auto; border: 1px solid var(--line); border-radius: 28px; padding: 18px 16px; background: var(--surface); }
+.phone textarea { width: 100%; min-height: 110px; }
+.big { width: 100%; padding: 14px; font-size: 17px; margin-top: 8px; }
+.warn { font-size: 13px; color: var(--conditional); margin: 4px 0; }
+.step { font-size: 13px; padding: 4px 0; border-bottom: 1px dashed var(--line); }
+.err { color: var(--confirmed); }
+.legend { display: flex; gap: 12px; flex-wrap: wrap; font-size: 12px; margin-bottom: 8px; }
+svg text { fill: var(--ink); font: 12px var(--font); }
