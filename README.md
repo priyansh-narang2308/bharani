@@ -14,7 +14,7 @@ Most tools answer the first two from whatever links someone typed in, and silent
 
 | | |
 |---|---|
-| Blueprint (Parts A–K) | https://claude.ai/artifact/SH9mvNS9s1496mSrZA1T4R |
+| Blueprint (Parts A–K) | https://drive.google.com/file/d/1A9J2MOWRAS5wANWxRHOu_4jxwS6QGpKQ/view?usp=sharing |
 | Figma design | https://www.figma.com/design/uZmx4WTZ8ksjuw04Wlhrh3 |
 | Measured results | [`eval/results/`](eval/results) |
 
