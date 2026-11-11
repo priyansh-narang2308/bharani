@@ -1,0 +1,107 @@
+{
+  "note": "Synthetic records from eval/sim.ts. Not real kitchens. Answers to questions come from the hidden truth.",
+  "params": {
+    "kitchens": 5,
+    "batches": 40,
+    "pCode": 0.45,
+    "pVague": 0.15,
+    "pOmit": 0.05,
+    "pDispatchMissing": 0.1,
+    "pUnknownBuyer": 0.08,
+    "pNoPhone": 0.1,
+    "pMasala": 0.25
+  },
+  "runsWithAffectedBatches": 197,
+  "summary": {
+    "spreadsheet": {
+      "batchRecall": 0.40425032627168256,
+      "batchPrecision": 1,
+      "jarsReachedShare": 0.5509059294506499,
+      "falseCompleteClaimRate": 0.9898477157360406,
+      "wrongAutoAcceptRate": 0
+    },
+    "batchSystem": {
+      "batchRecall": 0.421350692155071,
+      "batchPrecision": 1,
+      "jarsReachedShare": 0.5775030841688378,
+      "falseCompleteClaimRate": 0.9796954314720813,
+      "wrongAutoAcceptRate": 0
+    },
+    "autoAccept": {
+      "batchRecall": 0.9528784214015747,
+      "batchPrecision": 0.6693600773805155,
+      "jarsReachedShare": 0.8816332332305117,
+      "falseCompleteClaimRate": 0.7055837563451777,
+      "wrongAutoAcceptRate": 0.26443367122080214
+    },
+    "bharani": {
+      "batchRecall": 1,
+      "batchPrecision": 0.44567831871691344,
+      "jarsReachedShare": 0.89848354308487,
+      "falseCompleteClaimRate": 0,
+      "wrongAutoAcceptRate": 0
+    }
+  },
+  "questionCurve": [
+    {
+      "asked": 0,
+      "precision": 0.44734195751497147,
+      "openJars": 992.6949152542373
+    },
+    {
+      "asked": 1,
+      "precision": 0.4596198835330818,
+      "openJars": 912.0847457627119
+    },
+    {
+      "asked": 2,
+      "precision": 0.4694005877052368,
+      "openJars": 838.7966101694915
+    },
+    {
+      "asked": 3,
+      "precision": 0.48080512586380014,
+      "openJars": 770.1694915254237
+    },
+    {
+      "asked": 4,
+      "precision": 0.4908533217238535,
+      "openJars": 705.1525423728814
+    },
+    {
+      "asked": 5,
+      "precision": 0.5037731985131028,
+      "openJars": 644.4915254237288
+    },
+    {
+      "asked": 6,
+      "precision": 0.5160452977880944,
+      "openJars": 587.1355932203389
+    },
+    {
+      "asked": 7,
+      "precision": 0.5279082933319865,
+      "openJars": 533.4237288135594
+    },
+    {
+      "asked": 8,
+      "precision": 0.5424872417264403,
+      "openJars": 483.8474576271187
+    },
+    {
+      "asked": 9,
+      "precision": 0.5612433448145852,
+      "openJars": 436.91525423728814
+    },
+    {
+      "asked": 10,
+      "precision": 0.5795663471818738,
+      "openJars": 392.50847457627117
+    }
+  ],
+  "traceLatencyMs": {
+    "p50": 1.7610419999982696,
+    "p95": 2.411292000004323,
+    "max": 4.488875000000007
+  }
+}
